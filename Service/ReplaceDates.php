@@ -24,6 +24,8 @@ final class ReplaceDates
                 $count++;
                 return $date->format('m-d-Y');
             }
+            
+            return $matches[0];
         }, $text);
 
         return $count;
